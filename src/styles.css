@@ -1,0 +1,67 @@
+h1,
+h3 {
+  text-align: center;
+  color: rgb(25, 7, 41);
+}
+h1 {
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  margin: 40px;
+  padding: 15px 60px;
+  border: 2px solid #fad1f3;
+  border-radius: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.backgroud {
+  background-image: url("https://images.pexels.com/photos/3783385/pexels-photo-3783385.jpeg?cs=srgb&dl=pexels-prashant-gautam-3783385.jpg&fm=jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: block;
+  max-width: 600px;
+  margin: 40px;
+  padding: 15px 60px;
+  border: 2px solid #fad1f3;
+  border-radius: 5px;
+}
+
+.forcast {
+  padding-right: 20px;
+  margin-right: 20px;
+}
+.weather-today-icon {
+  font-size: 80px;
+}
+.list-group-item {
+  border: 0 !important;
+}
+.weather-icon {
+  font-size: 40px;
+}
+.info {
+  list-style: none;
+  text-align: center;
+  margin-right: 40px;
+}
+footer {
+  text-align: center;
+  padding-bottom: 25px;
+  font-family: monospace;
+}
+.unit {
+  font-size: small;
+  text-decoration: none;
+  color: rgb(25, 7, 41);
+  padding-right: 10px;
+}
+.date {
+  font-size: medium;
+  color: rgb(25, 7, 41);
+}
