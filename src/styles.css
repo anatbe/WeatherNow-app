@@ -10,9 +10,8 @@ h1 {
 .container {
   text-align: center;
   max-width: 600px;
-  margin: 40px;
+  margin: 10px;
   padding: 15px 60px;
-  border: 2px solid #fad1f3;
   border-radius: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -25,16 +24,15 @@ h1 {
   background-position: center;
   background-attachment: fixed;
   display: block;
-  max-width: 600px;
+  max-width: 2000px;
   margin: 40px;
   padding: 15px 60px;
   border: 2px solid #fad1f3;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .forcast {
-  padding-right: 20px;
-  margin-right: 20px;
+  margin-left: auto;
 }
 .weather-today-icon {
   font-size: 80px;
