@@ -7,18 +7,24 @@ h1 {
   padding: 20px;
 }
 
+h3 {
+  margin: 20px;
+}
+
 .container {
   text-align: center;
+  align-self: center;
   max-width: 600px;
   margin: 10px;
   padding: 15px 60px;
   border-radius: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .backgroud {
-  background-image: url("https://images.pexels.com/photos/3783385/pexels-photo-3783385.jpeg?cs=srgb&dl=pexels-prashant-gautam-3783385.jpg&fm=jpg");
+  background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-19670.jpg&fm=jpg");
   background-repeat: none;
   background-size: cover;
   background-position: center;
@@ -33,6 +39,7 @@ h1 {
 
 .forcast {
   margin-left: auto;
+  margin-top: 40px;
 }
 .weather-today-icon {
   font-size: 80px;
@@ -44,9 +51,14 @@ h1 {
   font-size: 40px;
 }
 .info {
-  list-style: none;
+  display: block;
   text-align: center;
-  margin-right: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: rgb(34, 34, 34);
+  padding: 2px 10px 20px 15px;
+  list-style: none;
 }
 footer {
   text-align: center;
