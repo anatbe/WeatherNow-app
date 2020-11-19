@@ -80,10 +80,18 @@ function showTemperature(response) {
   document.querySelector("#feels").innerHTML = Math.round(
     response.data.main.feels_like
   );
+  let iconElement = document.querySelector("#icon");
+  let descriptionElement = document.querySelector(".description");
+  descriptionElement.innerHTML = `${response.data.weather[0].description}`;
 
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function retrievePosition(position) {
