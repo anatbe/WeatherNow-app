@@ -1,84 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Weather</title>
-    <meta charset="UTF-8" />
-    <script src="https://kit.fontawesome.com/69ea02fef0.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <link rel="stylesheet" href="src/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="backgroud">
+<head>
+  <title>Weather</title>
+  <meta charset="UTF-8" />
+  <script src="https://kit.fontawesome.com/69ea02fef0.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="src/styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="backgroud">
     <div class="container">
-                <form>
-                  <div class="weatherNow">
-                    <input type="text" placeholder="Enter a city" autocomplete="off" id="City-search">
-                    <input class="btn btn-secondary" type="submit" value="Search" />
-                    <button><i class="fas fa-location-arrow"></i></button>
-                </form>
-                
-                <h1 id="CityName"></h1>
-                <ul></ul>
-                <h2 class="date"> Today</id>
-                  
-                </h2>
-                
-                <div class="currentTemp">
-                  <h3>
-                    <div class="temperature">°C<br> </div>
-                    <id class="unit">
-                      <a href="#" id="celsius">°C </a> |
-                      <a href="#" id="fahrenheit"> °F</a>
-                    </id>
-                  </h3>
-                </div>
-                                  <div class="description"></div>
+      <form>
+        <div class="weatherNow">
+          <input type="text" placeholder="Enter a city" autocomplete="off" id="City-search">
+          <input class="btn btn-secondary" type="submit" value="Search" />
+          <button><i class="fas fa-location-arrow"></i></button>
+      </form>
 
-                <div class="weather-today-icon">
-                  <img src="" alt=""id="icon">
-                </div> 
+      <h1 id="CityName"></h1>
+      <ul></ul>
+      <h2 class="date"> Today</id>
 
-                <ul class="info">
-                  <li>Wind: <span id="wind"> </span>Km/H</li>
-                  <li>Feels like: <span id="feels"></span>C°</li>
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                </ul>
-                <h3>The Forecast for the next 5 Days</h3>
-                <div class="forcast">
-                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
-                    <div class="col">Sunday </br>11°c | 7°c 
-                      <p class="weather-icon">🌤</p>
-                    </div>
-                    <div class="col">Monday </br> 12°c | 8°c
-                      <p class="weather-icon">🌦</p>
-                    </div>
-                    <div class="col">Thusday </br>14°c | 8°c
-                      <p class="weather-icon">☁️</p>
-                    </div>
-                    <div class="col">wednesday </br>15°c | 10°c
-                      <p class="weather-icon">🌤</p>
-                    </div>
-                    <div class="col">Thursday</br> 14°c | 7°c
-                      <p class="weather-icon">🌨</p>
-                    </div>
-                
-                  </div>
-                </div>
-                </div>
+      </h2>
+
+      <div class="currentTemp">
+        <h3>
+          <div class="temperature">°C<br> </div>
+          <id class="unit">
+            <a href="#" id="celsius-link">°C </a> |
+            <a href="#" id="fahrenheit-link"> °F</a>
+          </id>
+        </h3>
+      </div>
+      <div class="description"></div>
+
+      <div class="weather-today-icon">
+        <img src="" alt="" id="icon">
+      </div>
+
+      <ul class="info">
+        <li>Wind: <span id="wind"> </span>Km/H</li>
+        <li>Feels like: <span id="feels"></span>C°</li>
+        <li>Humidity: <span id="humidity"></span>%</li>
+      </ul>
+      <h3>The Forecast for the next 5 Days</h3>
+      <div class="forcast">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+          <div class="col">Sunday </br>11°c | 7°c 
+            <p class="weather-icon">🌤</p>
+          </div>
+          <div class="col">Monday </br> 12°c | 8°c
+            <p class="weather-icon">🌦</p>
+          </div>
+          <div class="col">Thusday </br>14°c | 8°c
+            <p class="weather-icon">☁️</p>
+          </div>
+          <div class="col">wednesday </br>15°c | 10°c
+            <p class="weather-icon">🌤</p>
+          </div>
+          <div class="col">Thursday</br> 14°c | 7°c
+            <p class="weather-icon">🌨</p>
+          </div>
+
         </div>
-</div>
-    <footer><small>
-    <a href="https://github.com/anatbe/WeatherNow-app" target="balnk"
-    >Open-source code by Anat Lipman</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer><small>
+      <a href="https://github.com/anatbe/WeatherNow-app" target="balnk">Open-source code by Anat Lipman</a>
     </small></footer>
 
-    <script src="src/app.js"></script>
-  </body>
+  <script src="src/app.js"></script>
+</body>
+
 </html>

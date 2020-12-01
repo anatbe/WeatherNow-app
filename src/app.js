@@ -47,25 +47,29 @@ function currentCity(event) {
   axios.get(apiUrl).then(showTemperature);
 }
 
-function convertoCelsius(event) {
+function displayFahrenheitTemperature(event) {
   event.preventDefault();
+  let farenheitTemputure = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector(".temperature");
-  temperatureElement.innerHTML = "12°C";
+  temperatureElement.innerHTML = Math.round(farenheitTemputure);
 }
 
-function convertoF(event) {
+function displayCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector(".temperature");
-  temperatureElement.innerHTML = "53°F";
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+let celsiusTemperature = null;
+
 let input = document.querySelector("form");
 input.addEventListener("submit", currentCity);
 
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", convertoF);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-let Celsius = document.querySelector("#celsius");
-Celsius.addEventListener("click", convertoCelsius);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
@@ -92,6 +96,7 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  celsiusTemperature = response.data.main.temp;
 }
 
 function retrievePosition(position) {
