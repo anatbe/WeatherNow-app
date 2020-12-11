@@ -90,3 +90,15 @@ footer {
   color: rgb(34, 34, 34);
   list-style: none;
 }
+.currentTemp .active {
+  color: black;
+  cursor: default;
+}
+.currentTemp .active:hover {
+  text-decoration: none;
+}
+
+#hour{
+  font-weight: bold;
+  margin: 0px;
+}
