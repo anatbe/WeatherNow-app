@@ -8,7 +8,10 @@ h1 {
 }
 
 h3 {
-  margin: 20px;
+  margin:20px;
+  padding: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   font-style: italic;
 }
@@ -76,7 +79,6 @@ footer {
 .unit {
   font-size: small;
   text-decoration: none;
-  color: rgb(25, 7, 41);
   padding-right: 10px;
 }
 .date {
@@ -92,9 +94,12 @@ footer {
   color: rgb(34, 34, 34);
   list-style: none;
 }
+
+
 .currentTemp .active {
-  color: black;
   cursor: default;
+  color:navy;
+
 }
 .currentTemp .active:hover {
   text-decoration: none;
