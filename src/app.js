@@ -46,7 +46,7 @@ function currentCity(event) {
 
   axios.get(apiUrl).then(showTemperature);
 
-  let forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchInput.value}&appid=${apiKey}`;
+  let forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchInput.value}&appid=${apiKey}&units=${units}`;
   axios.get(forecastUrl).then(showForecast);
 }
 
@@ -141,9 +141,7 @@ function showForecast(response) {
   let fourth = response.data.list[3];
   let fifth = response.data.list[4];
   console.log(first);
-
   let forecast = document.querySelector(".forecast");
-
   forecast.innerHTML = `
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
             <div class="col"><p id="hour">${getTime(first.dt)}</p>
